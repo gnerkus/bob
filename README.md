@@ -1,8 +1,6 @@
-# react-vite-component-template
+# bob (BenutzeroberflächeBausatz)
 
-Template for building a **React component library**, with **Vite**, **TypeScript** and **Storybook**.
-
-Check my post about this repository [here](https://victorlillo.dev/blog/react-typescript-vite-component-library).
+`bob` is a React component library.
 
 ## Features
 
