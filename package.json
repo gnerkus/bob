@@ -1,7 +1,8 @@
 {
-  "name": "bob",
-  "version": "0.0.1",
+  "name": "@nanotome/bob",
+  "version": "0.0.2",
   "type": "module",
+  "author": "Ifeanyi Oraelosi <ifeanyi@nanotome.com>",
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx",
