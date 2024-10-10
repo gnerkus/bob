@@ -1,0 +1,21 @@
+:root {
+  --b-font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI',
+    Roboto, 'Helvetica Neue', sans-serif;
+  --b-font-size-275: 0.6875rem;
+  --b-font-size-300: 0.75rem;
+  --b-font-size-325: 0.8125rem;
+  --b-font-size-350: 0.875rem;
+  --b-font-size-400: 1rem;
+  --b-font-size-450: 1.125rem;
+  --b-font-size-500: 1.25rem;
+  --b-font-size-550: 1.375rem;
+  --b-font-size-600: 1.5rem;
+  --b-font-size-750: 1.875rem;
+  --b-font-size-800: 2rem;
+  --b-font-size-900: 2.25rem;
+  --b-font-size-1000: 2.5rem;
+  --b-font-weight-regular: 450;
+  --b-font-weight-medium: 550;
+  --b-font-weight-semibold: 650;
+  --b-font-weight-bold: 700;
+}
