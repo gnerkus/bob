@@ -6,10 +6,15 @@
   --b-button-bg_hover: var(--b-button-bg);
   --b-button-bg_active: var(--b-button-bg);
   --b-button-bg_disabled: var(--b-button-bg);
+  --b-button-color: var(--b-color-text-on-bg-fill);
+  --b-button-color_hover: var(--b-button-color);
+  --b-button-color_active: var(--b-button-color);
+  --b-button-color_disabled: var(--b-button-color);
 
   background-color: var(--b-button-bg);
   border: none;
   border-radius: var(--b-border-radius-200);
+  color: var(--b-button-color);
 
   display: inline-flex;
 }
@@ -20,6 +25,10 @@
   --b-button-bg_hover: var(--b-color-bg-fill-primary-hover);
   --b-button-bg_active: var(--b-color-bg-fill-primary-active);
   --b-button-bg_disabled: var(--b-color-bg-fill-primary-disabled);
+
+  --b-button-color_hover: var(--b-color-text-on-bg-fill-hover);
+  --b-button-color_active: var(--b-color-text-on-bg-fill-active);
+  --b-button-color_disabled: var(--b-color-text-on-bg-fill-disabled);
 }
 
 .variant--secondary {
@@ -28,20 +37,25 @@
   --b-button-bg_hover: var(--b-color-bg-fill-secondary-hover);
   --b-button-bg_active: var(--b-color-bg-fill-secondary-active);
   --b-button-bg_disabled: var(--b-color-bg-fill-secondary-disabled);
+
+  --b-button-color: var(--b-color-text);
 }
 
 .button:hover {
   background: var(--b-button-bg_hover);
+  color: var(--b-button-color_hover);
 }
 
 .button:active {
   background: var(--b-button-bg_active);
+  color: var(--b-button-color_active);
 }
 
 .button:disabled,
 .button[disabled],
 .disabled {
   background: var(--b-button-bg_disabled);
+  color: var(--b-button-color_disabled);
 }
 
 .size--small {
