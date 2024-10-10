@@ -2,6 +2,9 @@
 
 .button {
   --b-button-bg: none;
+  --b-button-bg_hover: var(--b-button-bg);
+  --b-button-bg_active: var(--b-button-bg);
+  --b-button-bg_disabled: var(--b-button-bg);
 
   background-color: var(--b-button-bg);
   border-radius: 6px;
@@ -12,13 +15,31 @@
 .variant--primary {
   --b-button-bg: var(--b-color-bg-fill-primary);
 
-  backdrop-filter: sepia(90%);
+  --b-button-bg_hover: var(--b-color-bg-fill-primary-hover);
+  --b-button-bg_active: var(--b-color-bg-fill-primary-active);
+  --b-button-bg_disabled: var(--b-color-bg-fill-primary-disabled);
 }
 
 .variant--secondary {
   --b-button-bg: var(--b-color-bg-fill-secondary);
 
-  backdrop-filter: sepia(90%);
+  --b-button-bg_hover: var(--b-color-bg-fill-secondary-hover);
+  --b-button-bg_active: var(--b-color-bg-fill-secondary-active);
+  --b-button-bg_disabled: var(--b-color-bg-fill-secondary-disabled);
+}
+
+.button:hover {
+  background: var(--b-button-bg_hover);
+}
+
+.button:active {
+  background: var(--b-button-bg_active);
+}
+
+.button:disabled,
+.button[disabled],
+.disabled {
+  background: var(--b-button-bg_disabled);
 }
 
 .size--small {

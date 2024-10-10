@@ -1,4 +1,11 @@
 :root {
-    --b-color-bg-fill-primary: #1c83e3;
-    --b-color-bg-fill-secondary: #ff9f20;
+  --b-color-bg-fill-primary: #1c83e3;
+  --b-color-bg-fill-primary-hover: #2063b1;
+  --b-color-bg-fill-primary-active: #2063b1;
+  --b-color-bg-fill-primary-disabled: #76b4ef;
+
+  --b-color-bg-fill-secondary: #ff9f20;
+  --b-color-bg-fill-primary-hover: #c38e50;
+  --b-color-bg-fill-primary-active: #c38e50;
+  --b-color-bg-fill-primary-disabled: #ffb85c;
 }
