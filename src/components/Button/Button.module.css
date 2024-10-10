@@ -1,4 +1,5 @@
 @import url('../../tokens/color.css');
+@import url('../../tokens/border.css');
 
 .button {
   --b-button-bg: none;
@@ -7,7 +8,8 @@
   --b-button-bg_disabled: var(--b-button-bg);
 
   background-color: var(--b-button-bg);
-  border-radius: 6px;
+  border: none;
+  border-radius: var(--b-border-radius-200);
 
   display: inline-flex;
 }
