@@ -1,6 +1,7 @@
 @import url('../../tokens/color.css');
 @import url('../../tokens/border.css');
 @import url('../../tokens/space.css');
+@import url('../../tokens/font.css');
 
 .button {
   --b-button-bg: none;
@@ -21,6 +22,10 @@
   color: var(--b-button-color);
   cursor: pointer;
   display: inline-flex;
+  font-family: var(--b-font-family-sans);
+  font-size: var(--b-font-size-325);
+  font-weight: var(--b-font-weight-regular);
+
   gap: var(--b-button-gap);
   padding: var(--b-button-padding-block) var(--b-button-padding-inline);
   position: relative;
@@ -66,18 +71,22 @@
 }
 
 .size--small {
-  font-size: 1rem;
-  padding: 0.4rem 0.6rem;
+  --b-button-padding-block: var(--b-space-100);
+  --b-button-padding-inline: var(--b-space-200);
+  font-size: var(--b-font-size-300);
+  font-weight: var(--b-font-weight-regular);
 }
 
 .size--medium {
-  font-size: 1.2rem;
-  padding: 0.6rem 0.8rem;
+  --b-button-padding-block: var(--b-space-150);
+  --b-button-padding-inline: var(--b-space-300);
 }
 
 .size--large {
-  font-size: 1.4rem;
-  padding: 0.8rem 1rem;
+  --b-button-padding-block: var(--b-space-150);
+  --b-button-padding-inline: var(--b-space-300);
+  font-size: var(--b-font-size-350);
+  font-weight: var(--b-font-weight-regular);
 }
 
 .textAlign--center {
