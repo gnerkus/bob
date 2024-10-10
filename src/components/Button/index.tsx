@@ -23,6 +23,7 @@ export function Button({
   variant = 'primary',
   size = 'medium',
   textAlign = 'left',
+  onClick,
  }: ButtonProps) {
   const className = clsx(styles.button, {
     [styles[variationName('variant', variant)]]: true,
@@ -33,6 +34,7 @@ export function Button({
   const commonProps = {
     id,
     className,
+    onClick
   }
 
   return (
