@@ -18,7 +18,7 @@ const meta = {
   //   backgroundColor: { control: 'color' },
   // },
   args: {
-    label: 'Button',
+    children: 'Button',
     // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
     onClick: fn(),
   },
@@ -30,13 +30,13 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: true,
+    variant: 'primary',
   },
 }
 
 export const Secondary: Story = {
   args: {
-    primary: false,
+    variant: 'secondary',
   },
 }
 

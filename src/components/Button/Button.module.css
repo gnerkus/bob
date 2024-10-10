@@ -5,23 +5,38 @@
   border-radius: 6px;
 }
 
-.button--primary {
+.variant--primary {
   --bg-color: crimson;
 
   backdrop-filter: sepia(90%);
 }
 
-.button--small {
+.size--small {
   font-size: 1rem;
   padding: 0.4rem 0.6rem;
 }
 
-.button--medium {
+.size--medium {
   font-size: 1.2rem;
   padding: 0.6rem 0.8rem;
 }
 
-.button--large {
+.size--large {
   font-size: 1.4rem;
   padding: 0.8rem 1rem;
+}
+
+.textAlign--center {
+  justify-content: center;
+  text-align: center;
+}
+
+.textAlign--left {
+  justify-content: start;
+  text-align: start;
+}
+
+.textAlign--right {
+  justify-content: end;
+  text-align: end;
 }

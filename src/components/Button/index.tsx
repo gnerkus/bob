@@ -1,25 +1,48 @@
 import styles from './Button.module.css'
 import clsx from 'clsx'
 
-interface ComponentProps extends React.ComponentProps<'button'> {
-  primary?: boolean
-  size?: 'small' | 'medium' | 'large'
-  label: string
+interface ButtonProps {
+  /** a unique identifier for the button */
+  id?: string;
+  /** the content to display inside the button */
+  children?: string | string[];
+  variant?: 'primary' | 'secondary';
+  size?: 'small' | 'medium' | 'large';
+  textAlign?: 'left' | 'right' | 'center';
+  /** callback when clicked */
+  onClick?(): unknown;
 }
 
-export function Button({ primary = false, size = 'medium', label, ...props }: ComponentProps) {
-  const style = clsx(styles.button, {
-    [styles['button--primary']]: primary,
-    [styles[`button--${size}`]]: size,
+function variationName(name: string, value: string) {
+  return `${name}--${value}`;
+}
+
+export function Button({ 
+  id,
+  children,
+  variant = 'primary',
+  size = 'medium',
+  textAlign = 'left',
+ }: ButtonProps) {
+  const className = clsx(styles.button, {
+    [styles[variationName('variant', variant)]]: true,
+    [styles[variationName('size', size)]]: true,
+    [styles[variationName('textAlign', textAlign)]]: true,
   })
+
+  const commonProps = {
+    id,
+    className,
+  }
 
   return (
     <button
       type='button'
-      className={style}
-      {...props}
+      {...commonProps}
     >
-      {label}
+      <span>
+        {children}
+      </span>
     </button>
   )
 }
