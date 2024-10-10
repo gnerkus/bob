@@ -1,5 +1,6 @@
 @import url('../../tokens/color.css');
 @import url('../../tokens/border.css');
+@import url('../../tokens/space.css');
 
 .button {
   --b-button-bg: none;
@@ -10,13 +11,19 @@
   --b-button-color_hover: var(--b-button-color);
   --b-button-color_active: var(--b-button-color);
   --b-button-color_disabled: var(--b-button-color);
+  --b-button-padding-block: var(--b-space-150);
+  --b-button-padding-inline: var(--b-space-300);
+  --b-button-gap: var(--b-space-050);
 
   background-color: var(--b-button-bg);
   border: none;
   border-radius: var(--b-border-radius-200);
   color: var(--b-button-color);
-
+  cursor: pointer;
   display: inline-flex;
+  gap: var(--b-button-gap);
+  padding: var(--b-button-padding-block) var(--b-button-padding-inline);
+  position: relative;
 }
 
 .variant--primary {
