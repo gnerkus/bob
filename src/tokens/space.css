@@ -17,4 +17,46 @@
   --b-space-2400: 6rem;
   --b-space-2800: 7rem;
   --b-space-3200: 8rem;
+
+  --b-width-0: 0rem;
+  --b-width-025: 0.0625rem;
+  --b-width-050: 0.125rem;
+  --b-width-100: 0.25rem;
+  --b-width-150: 0.375rem;
+  --b-width-200: 0.5rem;
+  --b-width-300: 0.75rem;
+  --b-width-400: 1rem;
+  --b-width-500: 1.25rem;
+  --b-width-600: 1.5rem;
+  --b-width-700: 1.75rem;
+  --b-width-800: 2rem;
+  --b-width-900: 2.25rem;
+  --b-width-1000: 2.5rem;
+  --b-width-1200: 3rem;
+  --b-width-1600: 4rem;
+  --b-width-2000: 5rem;
+  --b-width-2400: 6rem;
+  --b-width-2800: 7rem;
+  --b-width-3200: 8rem;
+
+  --b-height-0: 0rem;
+  --b-height-025: 0.0625rem;
+  --b-height-050: 0.125rem;
+  --b-height-100: 0.25rem;
+  --b-height-150: 0.375rem;
+  --b-height-200: 0.5rem;
+  --b-height-300: 0.75rem;
+  --b-height-400: 1rem;
+  --b-height-500: 1.25rem;
+  --b-height-600: 1.5rem;
+  --b-height-700: 1.75rem;
+  --b-height-800: 2rem;
+  --b-height-900: 2.25rem;
+  --b-height-1000: 2.5rem;
+  --b-height-1200: 3rem;
+  --b-height-1600: 4rem;
+  --b-height-2000: 5rem;
+  --b-height-2400: 6rem;
+  --b-height-2800: 7rem;
+  --b-height-3200: 8rem;
 }

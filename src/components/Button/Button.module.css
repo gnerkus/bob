@@ -18,7 +18,7 @@
 
   background-color: var(--b-button-bg);
   border: none;
-  border-radius: var(--b-border-radius-200);
+  border-radius: var(--b-border-radius-100);
   color: var(--b-button-color);
   cursor: pointer;
   display: inline-flex;
@@ -75,11 +75,15 @@
   --b-button-padding-inline: var(--b-space-200);
   font-size: var(--b-font-size-300);
   font-weight: var(--b-font-weight-regular);
+  min-height: var(--b-height-700);
+  min-width: var(--b-width-700);
 }
 
 .size--medium {
   --b-button-padding-block: var(--b-space-150);
   --b-button-padding-inline: var(--b-space-300);
+  min-height: var(--b-height-800);
+  min-width: var(--b-width-800);
 }
 
 .size--large {
@@ -87,6 +91,8 @@
   --b-button-padding-inline: var(--b-space-300);
   font-size: var(--b-font-size-350);
   font-weight: var(--b-font-weight-regular);
+  min-height: var(--b-height-900);
+  min-width: var(--b-height-900);
 }
 
 .textAlign--center {
