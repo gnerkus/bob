@@ -1,6 +1,6 @@
 {
   "name": "@nanotome/bob",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "author": "Ifeanyi Oraelosi <ifeanyi@nanotome.com>",
   "scripts": {
