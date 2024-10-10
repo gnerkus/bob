@@ -11,6 +11,8 @@ interface ButtonProps {
   textAlign?: 'left' | 'right' | 'center';
   /** callback when clicked */
   onClick?(): unknown;
+  /** Disables the button */
+  disabled?: boolean;
 }
 
 function variationName(name: string, value: string) {
@@ -24,6 +26,7 @@ export function Button({
   size = 'medium',
   textAlign = 'left',
   onClick,
+  disabled,
  }: ButtonProps) {
   const className = clsx(styles.button, {
     [styles[variationName('variant', variant)]]: true,
@@ -34,7 +37,8 @@ export function Button({
   const commonProps = {
     id,
     className,
-    onClick
+    onClick,
+    disabled
   }
 
   return (

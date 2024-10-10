@@ -14,20 +14,15 @@ describe('Button test:', () => {
     screen.getByText('Testing')
   })
 
-  // TODO: implement disabled state
-  // it('should be disabled', () => {
-  //   render(
-  //     <Button disabled>Testing</Button>
-  //   )
-  //   expect(screen.getByRole('button')).toBeDisabled()
-  // })
+  it('should be disabled', () => {
+    render(<Button disabled>Testing</Button>)
+    expect(screen.getByRole('button')).toBeDisabled()
+  })
 
   it('onClick triggers properly', async () => {
     const mockFn = vi.fn()
 
-    render(
-      <Button onClick={mockFn}>Testing</Button>
-    )
+    render(<Button onClick={mockFn}>Testing</Button>)
 
     expect(mockFn).toHaveBeenCalledTimes(0)
 
@@ -36,24 +31,24 @@ describe('Button test:', () => {
     expect(mockFn).toHaveBeenCalledTimes(1)
   })
 
-  // TODO: implement disabled state
-  // it('disabled prevents action', async () => {
-  //   const mockFn = vi.fn()
+  it('disabled prevents action', async () => {
+    const mockFn = vi.fn()
 
-  //   render(
-  //     <Button
-  //       onClick={mockFn}
-  //       label='Testing'
-  //       disabled
-  //     />
-  //   )
+    render(
+      <Button
+        onClick={mockFn}
+        disabled
+      >
+        Testing
+      </Button>
+    )
 
-  //   expect(mockFn).toHaveBeenCalledTimes(0)
+    expect(mockFn).toHaveBeenCalledTimes(0)
 
-  //   fireEvent.click(screen.getByRole('button'))
+    fireEvent.click(screen.getByRole('button'))
 
-  //   expect(mockFn).toHaveBeenCalledTimes(0)
-  // })
+    expect(mockFn).toHaveBeenCalledTimes(0)
+  })
 
   // https://github.com/vitest-dev/vitest/blob/main/examples/react-testing-lib/src/components/Spinner.test.tsx
 
