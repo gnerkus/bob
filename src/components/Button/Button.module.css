@@ -18,17 +18,20 @@
 
   background-color: var(--b-button-bg);
   border: none;
-  border-radius: var(--b-border-radius-100);
+  border-radius: var(--b-border-radius-150);
   color: var(--b-button-color);
   cursor: pointer;
   display: inline-flex;
   font-family: var(--b-font-family-sans);
-  font-size: var(--b-font-size-325);
+  font-size: var(--b-font-size-400);
   font-weight: var(--b-font-weight-regular);
 
   gap: var(--b-button-gap);
+  line-height: 1.5;
   padding: var(--b-button-padding-block) var(--b-button-padding-inline);
   position: relative;
+
+  vertical-align: middle;
 }
 
 .variant--primary {
@@ -73,26 +76,28 @@
 .size--small {
   --b-button-padding-block: var(--b-space-100);
   --b-button-padding-inline: var(--b-space-200);
-  font-size: var(--b-font-size-300);
+  border-radius: var(--b-border-radius-100);
+  font-size: var(--b-font-size-350);
   font-weight: var(--b-font-weight-regular);
-  min-height: var(--b-height-700);
-  min-width: var(--b-width-700);
+  min-height: var(--b-height-800);
+  min-width: var(--b-width-800);
 }
 
 .size--medium {
   --b-button-padding-block: var(--b-space-150);
   --b-button-padding-inline: var(--b-space-300);
-  min-height: var(--b-height-800);
-  min-width: var(--b-width-800);
+  min-height: var(--b-height-1000);
+  min-width: var(--b-width-1000);
 }
 
 .size--large {
   --b-button-padding-block: var(--b-space-150);
   --b-button-padding-inline: var(--b-space-300);
-  font-size: var(--b-font-size-350);
+  border-radius: var(--b-border-radius-200);
+  font-size: var(--b-font-size-500);
   font-weight: var(--b-font-weight-regular);
-  min-height: var(--b-height-900);
-  min-width: var(--b-height-900);
+  min-height: var(--b-height-1200);
+  min-width: var(--b-height-1200);
 }
 
 .textAlign--center {
